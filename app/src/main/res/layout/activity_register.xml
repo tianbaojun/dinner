@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/title"/>
+    <RelativeLayout android:padding="@dimen/login_padding"
+        style="@style/match_match">
+        
+<!--         国家地区 -->
+        <TextView android:id="@+id/country_tv" style="@style/login_text_style"
+            android:text="@string/country" />
+        
+<!--         中国 -->
+        <TextView android:id="@+id/country_input_et" style="@style/wrap_wrap"
+            android:text="@string/country_input" android:textColor="@color/green"
+            android:layout_alignParentRight="true" android:textSize="@dimen/login_input_text_size"
+            android:paddingRight="@dimen/login_chain_right_padding"/>
+<!--         线条 -->
+        <View android:id="@+id/line" style="@style/line"
+            android:layout_below="@id/country_tv" android:layout_marginTop="@dimen/line_margin_top"/>
+        
+<!--         spinner标签 -->
+        <ImageView android:id="@+id/spinner_id" android:layout_width="wrap_content"
+            android:layout_alignParentRight="true" android:layout_alignBottom="@id/line"
+            android:src="@drawable/spinner" android:layout_height="wrap_content"/>
+        
+<!--         电话输入框 -->
+        <EditText android:id="@+id/phone_input_et" style="@style/login_input_style"
+            android:hint="@string/phone_input" android:background="@drawable/d_login_input_bg"
+            android:layout_below="@id/line" android:inputType="phone"
+            android:maxLength="11"/>
+        
+<!--         电话标签 -->
+        <TextView android:id="@+id/phone_tv" style="@style/login_text_style"
+            android:text="@string/phone" android:layout_alignBottom="@id/phone_input_et"
+            android:layout_alignTop="@id/phone_input_et"/>
+        
+<!--         验证码输入框 -->
+        <EditText android:id="@+id/code_et" style="@style/login_input_style"
+            android:hint="@string/code_input" android:background="@drawable/d_login_input_bg"
+            android:layout_below="@id/phone_tv" android:inputType="number"
+            android:maxLength="6" />
+        
+<!--        验证码标签 -->
+        <TextView android:id="@+id/code_tv" style="@style/login_text_style"
+            android:text="@string/code" android:layout_alignBottom="@id/code_et"
+            android:layout_alignTop="@id/code_et"/>
+        
+<!--         发送验证码按钮 -->
+		<Button android:id="@+id/code_bt" style="@style/wrap_wrap"
+            android:background="@drawable/d_login_bt_bg" android:text="@string/send_code"
+            android:gravity="center" android:textColor="@color/white"
+            android:layout_alignBottom="@id/code_et" android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/code_et" android:textSize="@dimen/send_code_text_size"
+            android:layout_marginBottom="@dimen/code_bt_margin_bottom"/>
+
+<!--         密码输入框 -->
+        <EditText android:id="@+id/password_et" style="@style/login_input_style"
+            android:hint="@string/password_input" android:background="@drawable/d_login_input_bg"
+            android:layout_below="@id/code_et" android:inputType="textPassword"
+            android:maxLength="16" />
+        
+<!--         密码标签 -->
+        <TextView android:id="@+id/password_tv" style="@style/login_text_style"
+            android:text="@string/password" android:layout_alignBottom="@id/password_et"
+            android:layout_alignTop="@id/password_et"/>
+        
+<!--         注册按钮 -->
+        <Button android:id="@+id/register_bt" style="@style/match_wrap"
+            android:background="@drawable/d_login_bt_bg" android:text="@string/register"
+            android:gravity="center" android:textColor="@color/white"
+            android:layout_below="@id/password_et" 
+            android:layout_marginTop="@dimen/login_bt_margin_top"/>
+        	
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--     宽高样式 -->
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- 	线条样式 -->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <!-- 	导航栏radioButton按钮 -->
+    <style name="radio_button_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@drawable/d_nav_text</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/radio_text_size</item>
+    </style>
+
+    <dimen name="radio_height">40dp</dimen>
+    <dimen name="radio_text_size">20sp</dimen>
+
+    <!--     国家地区，手机号，密码样式 -->
+
+    <style name="login_text_style">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--   国家地区，手机号，密码输入框样式 -->
+
+    <style name="login_input_style" parent="match_wrap">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:paddingLeft">100dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+</resources>

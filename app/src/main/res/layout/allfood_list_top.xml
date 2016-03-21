@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:background="@color/green"/>
+
+
+    <com.tabjin.dinner.widget.MyGridView android:id="@+id/allfood_list_top_grid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/allfood_grid_hieght"
+        android:numColumns="4"
+        android:layout_below="@id/first"/>
+
+    <ImageView
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/green"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/allfood_list_top_grid"/>
+
+    <RadioGroup
+        android:id="@+id/allfood_list_top_rg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/two"
+        android:showDividers="middle"
+        android:scrollIndicators="top">
+        <RadioButton
+            android:id="@+id/good_comment"
+            style="@style/radio_button_style"
+            android:text="@string/good_comment"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"/>
+        <RadioButton
+            android:id="@+id/most_num"
+            style="@style/radio_button_style"
+            android:text="@string/most_num"
+            android:checked="true"
+
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"/>
+        <RadioButton
+            android:id="@+id/good_price"
+            style="@style/radio_button_style"
+            android:text="@string/good_price"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp" />
+        <RadioButton
+            android:id="@+id/best_price"
+            style="@style/radio_button_style"
+            android:text="@string/best_price"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/pick_up"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:layout_below="@id/allfood_list_top_rg"
+        android:paddingLeft="10dp"/>
+
+</RelativeLayout>

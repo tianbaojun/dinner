@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <ListView
+        android:id="@+id/allfood_list"
+        style="@style/match_match"
+        android:divider="@color/food_list_divider"
+        android:dividerHeight="5dp"
+        android:headerDividersEnabled="false"
+        android:layout_weight="1"/>
+
+    <include layout="@layout/bottom"
+        android:id="@+id/bottom" />
+
+    <ListView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单号："/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/id"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_big_193"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间："
+        android:layout_alignParentRight="true"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总计："
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:layout_alignBottom="@id/image"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/foodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美食名或数量"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/image"
+        android:layout_alignTop="@id/image"
+        android:padding="4dp"/>
+
+</RelativeLayout>

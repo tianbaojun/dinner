@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:id="@+id/top_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/dinningOline"
+        android:gravity="center"/>
+    <TextView android:id="@+id/my_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/my"
+        android:layout_below="@id/top_myinfo"
+        android:gravity="center"/>
+    <LinearLayout android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/my"
+        android:layout_below="@id/my_myinfo">
+        <ImageView android:id="@+id/my_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"/>
+        <TextView android:id="@+id/login_tv_myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/login_or_register"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+    <TextView android:id="@+id/address"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="30dp"
+    android:text="@string/address"
+    android:gravity="center_vertical"
+    android:layout_below="@id/ll"/>
+    <TextView android:id="@+id/mycollect"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/mycollect"
+        android:gravity="center_vertical"
+        android:layout_below="@id/address"/>
+</RelativeLayout>

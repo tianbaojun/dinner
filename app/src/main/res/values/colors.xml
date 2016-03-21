@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="my">#990088</color>
+    <color name="white">#ffffff</color>
+    <color name="title_bg">#018671</color>
+    <color name="green">#FFCF0A</color>
+    <color name="left_pressed">#0E0E0E</color>
+    <color name="black">#000000</color>
+    <color name="problem">#34679A</color>
+    <color name="login_bg">#E9E9E9</color>
+    <color name="welcome_bottom">#000C14</color>
+    <color name="welcome_top">#000201</color>
+    <color name="gray">#747474</color>
+    <color name="gray_pressed">#444444</color>
+    <color name="register">#EFEFEF</color>
+    <color name="food_list_divider">#D4D1D1</color>
+    <color name="exit">#FC5050</color>
+    <color name="exit_pressed">#FC8383</color>
+    <color name="white_pressed">#EBEAEA</color>
+    <color name="friend_name">#82D2F4</color>
+    <color name="welcom_bg">#2EB6AA</color>
+    <color name="register_pressed">#D4D1D1</color>
+
+</resources>

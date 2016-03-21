@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="@color/title_bg"
+    android:layout_height="@dimen/title_height">
+    
+    <ImageView android:id="@+id/left_im" style="@style/wrap_match"
+        android:padding="@dimen/title_left_padding" android:clickable="true"
+        android:src="@drawable/left" android:scaleType="centerInside"
+        android:contentDescription="@string/back"/>
+    
+    <TextView android:id="@+id/title_tv" style="@style/wrap_wrap"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white" android:textSize="@dimen/titlt_text_size"/>
+    
+    <ImageView android:id="@+id/right_im" style="@style/wrap_match"
+        android:padding="@dimen/title_left_padding"
+        android:src="@drawable/right" android:scaleType="centerCrop"
+        android:layout_alignParentRight="true" android:clickable="true"
+        android:visibility="gone"/>
+    
+    <TextView android:id="@+id/right_tv" style="@style/wrap_wrap"
+        android:layout_alignParentRight="true" 
+        android:padding="@dimen/title_left_padding"
+        android:textColor="@color/white"  android:clickable="true"
+        android:visibility="gone" />
+    
+    <ProgressBar android:id="@+id/title_progress" android:layout_width="match_parent"
+        android:layout_height="2dp" style="@android:style/Widget.ProgressBar.Horizontal"
+        android:indeterminate="true" android:visibility="gone"
+        android:layout_alignParentBottom="true" android:max="100"
+        android:progressDrawable="@drawable/d_progressbar_bg"/>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="联系人"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="姓名："
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/name_tv"
+            android:layout_marginRight="20dp"
+            android:selectAllOnFocus="true"
+            android:hint="请输入收货人姓名"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/phone_tv"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="手机："
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/name_tv"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/name_tv"
+            android:layout_marginRight="20dp"
+            android:hint="请输入收货人手机号码"
+            android:selectAllOnFocus="true"
+            android:textSize="14sp"
+            android:layout_below="@id/name_tv"
+            android:inputType="phone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="收货地址"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/street_tv"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="街道："
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/street_tv"
+            android:layout_marginRight="20dp"
+            android:hint="请输入街道"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/num_tv"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="门牌号："
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/street_tv"/>
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/num_tv"
+            android:layout_marginRight="20dp"
+            android:hint="请输入门牌号"
+            android:textSize="14sp"
+            android:layout_below="@id/street_tv"
+            android:inputType="phone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

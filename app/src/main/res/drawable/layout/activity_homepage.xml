@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--设置首页新闻图片展示-->
+    <ViewFlipper android:id="@+id/vf_homepages"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:src="@drawable/one"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        <ImageView
+            android:src="@drawable/two"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        <ImageView
+            android:src="@drawable/three"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </ViewFlipper>
+    <!--设置三个图标,以按键的形式，设置按键背景为图片-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+        <Button android:id="@+id/bt_allfood"
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:text="@string/allfood"
+            android:background="#234"
+            android:layout_weight="1"
+            android:onClick="allfood"/>
+        <Button android:id="@+id/bt_bestfood"
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:text="@string/bestfood"
+            android:background="#456"
+            android:layout_weight="2"/>
+        <Button android:id="@+id/bt_onsale"
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:text="@string/onsale"
+            android:background="#789"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#189"
+            android:layout_marginTop="2dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#559"
+            android:layout_marginTop="2dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#919"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

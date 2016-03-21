@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="注册"
+        android:textSize="30dp" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15px"
+        android:paddingRight="15dp"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:paddingLeft="80dp"
+                android:text="@string/user"
+                android:layout_gravity="right"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/register_username"
+                android:hint="请输入用户名" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/password"
+                android:layout_gravity="right"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/register_password"
+                android:hint="请输入密码"
+                android:password="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="性别："
+                android:layout_gravity="right"/>
+            <RadioGroup android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="男"/>
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="女"/>
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="爱好："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"/>
+            <TableLayout android:gravity="left|center_vertical"
+                android:orientation="vertical">
+                <TableRow>
+                    <CheckBox android:id="@+id/ch_reader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="阅读"/>
+                    <CheckBox android:id="@+id/ch_sport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="运动"/>
+                    <CheckBox android:id = "@+id/ch_art"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="文艺"/>
+                </TableRow>
+                <TableRow>
+                    <CheckBox android:id="@+id/ch_speak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="社交"/>
+                    <CheckBox android:id="@+id/ch_zhai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="宅"/>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人说明："
+                android:layout_gravity="right"/>
+            <EditText android:id="@+id/description"
+                android:layout_height="100dp"
+                android:hint="请输入个人描述..." />
+        </TableRow>
+    </TableLayout>
+    <Button android:id="@+id/re_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px"
+        android:layout_gravity="center_horizontal"
+        android:text="提交"
+        android:onClick="submit"/>
+</LinearLayout>
